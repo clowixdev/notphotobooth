@@ -1,30 +1,36 @@
 <header class="header m-0 p-0">
     <div class="container-fluid m-0 p-0 text-center clw-fix-size">
-        <div class="clw-fix-size clw-header-bg">
+        <div id="BG" class="clw-fix-size clw-header-bg">
             <div class="row m-0 p-0">
                 <div class="col-sm-12">
                     <nav class="navbar navbar-expand-lg text-right">
                         <div class="container-fluid">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-color clw-text-style pb-1 fs-3" href="{{url_for('index')}}">НеФотоБудка</a>
+                                    <div class="always-hover-style"></div>
+                                </li>
+                            </ul>
 
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            <button class="navbar-toggler calm-color" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="bi bi-camera"></span>
                             </button>
 
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
 
                                     <li class="nav-item">
-                                        <a class="nav-link text-color" href="{{url_for('index')}}">Портфолио</a>
+                                        <a class="nav-link text-color hover-style" href="{{url_for('index')}}">Портфолио</a>
                                     </li>
-                                    <span class="nav-link text-color"> ~ </span>
+                                    <span style="color: rgb(255, 245, 224);" class="nav-link disabled text-color"> ~ </span>
                                     <li class="nav-item">
-                                        <a class="nav-link text-color" href="{{url_for('index')}}">Расценки</a>
+                                        <a class="nav-link text-color hover-style" href="{{url_for('index')}}">Расценки</a>
                                     </li>
-                                    <span class="nav-link text-color"> ~ </span>
+                                    <span style="color: rgb(255, 245, 224);" class="nav-link disabled text-color"> ~ </span>
                                     <li class="nav-item">
-                                        <a class="nav-link text-color" href="{{url_for('index')}}">Контакты</a>
+                                        <a class="nav-link text-color hover-style" href="{{url_for('index')}}">Контакты</a>
                                     </li>
                                 </ul>
                             </div>
@@ -33,7 +39,7 @@
                 </div>
             </div>
             <div class="row text-center justify-content-center align-items-center clw-fix-size">
-                <div class="col-sm-4">
+                <div class="col-sm-12">
                     <div class="clw-name">
                         Н е Ф о т о Б у д к а
                     </div>

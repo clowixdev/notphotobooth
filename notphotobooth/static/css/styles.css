@@ -1,3 +1,16 @@
+/* ** COMMON STYLES */
+
+.circled {
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.calm-color {
+    color: #ffdd8e;
+    background-color: #ffffff;
+}
+
+
 /* ** HEADER */
 .clw-fix-size {
     height: 100vh;
@@ -16,11 +29,11 @@
     font-weight: lighter;
     font-size: 25px;
     color: white;
-    margin-bottom: 250px;
+    margin-bottom: 225px;
 }
 
 .clw-header-bg {
-    background-image: url(../img/header_bg.jpg);
+    background-image: url(../img/header_1bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -31,10 +44,49 @@
     color: rgb(255, 245, 224);
 }
 
-/* ? INNER ELEMENTS */
+.clw-text-style {
+    color: #fff;
+    letter-spacing: .20em;
+    display: inline-block;
+    position: relative;
+}
 
-.calm-color {
-    color: bisque;
+/* ! HOVER ANMIMATION */
+
+.always-hover-style {
+    color: #fff;
+    letter-spacing: .20em;
+    display: inline-block;
+    position: relative;
+    display: block;
+    height: 4px;
+    background: linear-gradient(to right, #f8f8f8, #ffdd8e 100%);
+}
+
+li {
+    position: relative;
+}
+.hover-style {
+    color: #fff;
+    letter-spacing: .20em;
+    display: inline-block;
+    position: relative;
+}
+.hover-style:hover::after {
+    width: 100%;
+    right: 0;
+}
+.hover-style::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to right, #f8f8f8, #ffdd8e 100%);
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
 }
 
 /* ** FOOTER */
@@ -55,6 +107,7 @@
 .footer {
     padding: 50px;
 }
+
 .copy {
     padding: 20px 0 20px 0;
     margin: 0;
