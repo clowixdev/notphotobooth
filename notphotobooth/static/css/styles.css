@@ -1,0 +1,61 @@
+/* ** HEADER */
+.clw-fix-size {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.clw-name {
+    font-weight: lighter;
+    font-size: 45px;
+    color: white;
+}
+
+.clw-lowername {
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 250px;
+}
+
+.clw-header-bg {
+    background-image: url(../img/header_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-color {
+    font-weight: lighter;
+    font-size: 25px;
+    color: rgb(255, 245, 224);
+}
+
+/* ? INNER ELEMENTS */
+
+.calm-color {
+    color: bisque;
+}
+
+/* ** FOOTER */
+
+.clw-footer-width {
+    width: 100%;
+}
+
+.paragraph-fix {
+    text-align: center;
+    max-width: 100%;
+}
+
+.clw-footer-bg {
+    background-color: rgb(250, 233, 212);
+}
+
+.footer {
+    padding: 50px;
+}
+.copy {
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
