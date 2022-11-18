@@ -1,5 +1,4 @@
 /* ** COMMON STYLES */
-
 .circled {
     margin-left: 5px;
     border-radius: 50%;
@@ -10,15 +9,19 @@
     background-color: #ffffff;
 }
 
-
-/* ** HEADER */
-.clw-fix-size {
+.clw-full-screen {
     height: 100vh;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
 
+.clw-width-fix {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ** HEADER */
 .clw-name {
     font-weight: lighter;
     font-size: 45px;
@@ -49,6 +52,52 @@
     letter-spacing: .20em;
     display: inline-block;
     position: relative;
+}
+
+/* ? SECTION STYLES */
+.wrapper {
+    width: 90%;
+    height: 90%;
+    padding-left: 27.5%;
+    margin-bottom: 15px;
+}
+
+.clw-portfolio-bg {
+    background-image: url(../img/3darken.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.clw-portfolio-img {
+    width: auto;
+    height: auto;
+    border-color: #ffdd8e;
+    border-radius: 2%;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.clw-portfolio-header {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 35px;
+    letter-spacing: .20em;
+}
+
+.clw-portfolio-text {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: .10em;
+}
+
+a.clw-portfolio-link:active,
+a.clw-portfolio-link {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: .20em;
 }
 
 /* ! HOVER ANMIMATION */

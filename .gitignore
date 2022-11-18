@@ -2,3 +2,9 @@ Pipfile.lock
 Pipfile
 /notphotobooth/__pycache__
 /__pycache__
+/notphotobooth/static/img
+/notphotobooth/static/js/bootstrap.bundle.min.js
+/notphotobooth/static/js/bootstrap.bundle.min.js.map
+/notphotobooth/static/css/bootstrap-icons.css
+/notphotobooth/static/css/bootstrap.min.css
+/notphotobooth/static/css/bootstrap.min.css.map
