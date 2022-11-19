@@ -26,12 +26,12 @@
             </div>
             <div class="row align-items-center m-0 pb-5" style="height: 80vh">
                 <div class="col">
-                    <img src="{{url_for('static', filename='img/18.jpg')}}" alt=""
-                        class="clw-portfolio-img" style="width: 100%">
+                    <img src="{{url_for('static', filename='img/18.jpg')}}" alt="" class="clw-portfolio-img"
+                        style="width: 100%">
                 </div>
                 <div class="col">
-                    <img src="{{url_for('static', filename='img/20.jpg')}}" alt=""
-                        class="clw-portfolio-img" style="width: 100%">
+                    <img src="{{url_for('static', filename='img/20.jpg')}}" alt="" class="clw-portfolio-img"
+                        style="width: 100%">
                 </div>
                 <div class="col-sm-12 col-lg-6 text-center align-items-center">
                     <div class="clw-portfolio-header text-nowrap">
@@ -47,7 +47,148 @@
             <div class="row m-0 p-0 text-end" style="height: 10vh; width: 100%">
                 <div class="col-sm-12 ">
                     <div class="link-wrapper">
-                        <a class="clw-portfolio-link hover-style" href="{{url_for('portfolio')}}">Портфолио<i class="bi bi-arrow-right"></i></a>.
+                        <a class="clw-portfolio-link hover-style" href="{{url_for('portfolio')}}"> Портфолио<i
+                                class="bi bi-arrow-right"></i></a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="faq">
+        <div class="container clw-full-screen clw-faq-bg clw-width-fix">
+            <!-- FAQ section -->
+            <div class="row m-0 p-0 align-items-center" style="height: 10vh">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg text-right">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-color clw-text-style pb-1 fs-3" href="#header"><i
+                                            class="bi bi-question-circle"></i>FAQ</a>
+                                    <div class="always-hover-style"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row p-0 m-0 align-items-center" style="height: 90vh; overflow-y: auto">
+                <div class="col-md-12 col-lg-7 p-0">
+                    <div class="text-center pb-4">
+                        <p class="clw-faq-header">Часто задаваемые вопросы!</p>
+                        <p class="clw-subheader">В этом разделе вы сможете найти ответы на самые часто задаваемые
+                            вопросы!</p>
+                    </div>
+                    <div class="accordion clw-accordion align-self-center mb-5" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button clw-accorfion-header" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <i class="bi bi-calendar-day"></i>&nbsp;Как забронировать время на фотосессию и что
+                                    для этого нужно?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body clw-accordion-body">
+                                    <hr class="clw-hr">
+                                    Чтобы забронировать время на фотосессию, нужно&nbsp;<strong>выбрать зал и
+                                        определиться с датой и
+                                        временем проведения съемки</strong>.
+                                    Затем либо <strong>самостоятельно уточнить</strong>, свободно ли данное время в
+                                    данном зале в
+                                    расписании на сайте и забронировать его самостоятельно в форме бронирования,
+                                    <strong>либо позвонить на наш контактный номер.</strong>
+                                    <hr class="clw-hr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed clw-accorfion-header" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <i class="bi bi-cash-coin"></i>&nbsp;Работаете ли вы по предоплате?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body clw-accordion-body">
+                                    <hr class="clw-hr">
+                                    <strong>Да</strong>, для брони фотопространства на определенную дату или
+                                    оборудования нужно будет произвести предоплату равную <strong>50% от цены
+                                        услуги.</strong>
+                                    <hr class="clw-hr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed clw-accorfion-header" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <i class="bi bi-hourglass-split"></i>&nbsp;Какое минимальное время аренды студии?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body clw-accordion-body">
+                                    <hr class="clw-hr">
+                                    <strong>Минимальное</strong> время аренды фотопространства составляет
+                                    <strong>полчаса.</strong>
+                                    <hr class="clw-hr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed clw-accorfion-header" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <i class="bi bi-emoji-dizzy"></i>&nbsp;Что будет, если я опоздаю на фотосессию?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body clw-accordion-body">
+                                    <hr class="clw-hr">
+                                    Забронированное вами время в зале <strong>никто не займет</strong>, однако
+                                    останавливать его тоже <strong>никто не будет.</strong>
+                                    Опоздание <strong>не продлевает</strong> забронированное вами время. Также,
+                                    покидание фотопространства <strong>раньше</strong>
+                                    окончания забронированного времени <strong>не повлияет</strong> на конечную сумму
+                                    оплаты.
+                                    <hr class="clw-hr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed clw-accorfion-header" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    <i class="bi bi-credit-card-2-back"></i>&nbsp;Как происходит возврат денежных
+                                    средств при отмене бронирования?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body clw-accordion-body">
+                                    <hr class="clw-hr">
+                                    Возврат денежных средств осуществляется <strong>по предварительной договоренности</strong> наличными
+                                    непосредственно в нашей студии, <strong>на карту Сбербанка клиента</strong> или на карту, с которой
+                                    была проведена оплата через <strong>систему онлайн-бронирования, при наличии электронных
+                                    чеков</strong>, подтверждающих факт оплаты услуги.
+                                    <hr class="clw-hr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col align-self-center">
+                    <div class="align-self-center text-center justify-content-center d-none d-lg-block">
+                        <img class="img-fluid clw-faq-img" src="{{url_for('static', filename='img/9.jpg')}}" style="width: 70%">
                     </div>
                 </div>
             </div>
