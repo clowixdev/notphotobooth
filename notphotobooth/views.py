@@ -28,7 +28,11 @@ def portfolio():
 @app.route('/update', methods=['POST', 'GET'])
 def update():
     if request.method == 'POST':
+<<<<<<< HEAD
         repo = git.Repo('https://github.com/clowixdev/nephotobooth')
+=======
+        repo = git.Repo('/home/clowixdev/notphotobooth/.git/')
+>>>>>>> 46a8be6e6b1bcee5000588ca7ee37bb6becafec5
         origin = repo.remotes.origin
         origin.pull()
         return 'Updated PythonAnywhere succesfully', 200
