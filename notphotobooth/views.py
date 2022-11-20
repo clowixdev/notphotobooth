@@ -27,6 +27,10 @@ def portfolio():
 
 @app.route('/update', methods=['POST', 'GET'])
 def update():
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2391353d16c2a9bd837a1033041ee8c4d0ed2e9f
     if request.method == 'POST':
         repo = git.Repo('https://github.com/clowixdev/notphotobooth.git')
         origin = repo.remotes.origin
