@@ -1,0 +1,72 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<header>
+    <div class="row m-0 p-0 align-items-center clw-pfo-bg" style="height: 10vh">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg text-right">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-color clw-text-style pb-1 fs-3" href="{{url_for('index')}}"><i
+                                    class="bi bi-capslock"></i>Вернуться</a>
+                            <div class="always-hover-style"></div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+<section>
+    <!-- portfolio section -->
+    <div class="container-fluid clw-pfo-bg" style="min-height: 100vh; overflow-y: auto">
+        <div class="row align-items-center text-center">
+            <div class="col">
+                <img src="{{url_for('static', filename='img/2.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/3.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/4.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/5.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/6.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/7.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/17.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/9.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/10.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/11.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/21.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/13.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/14.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/15.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/16.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/8.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/18.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/19.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/20.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/12.jpg')}}" class="clw-pfo-img clw-pfo-img-vert">
+                <img src="{{url_for('static', filename='img/22.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+                <img src="{{url_for('static', filename='img/23.jpg')}}" class="clw-pfo-img clw-pfo-img-horiz">
+            </div>
+            <div class="mb-5" style="width: 100%"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer class="clw-pfo-bg">
+    <div class="row m-0 pb-5" style="height: 10vh; width: 100%">
+        <div class="col-sm-12 ">
+            <div class="link-wrapper clw-pfo-back">
+                <a class="nav-link clw-pfo-back-text text-color clw-text-style pb-1 fs-3" href="{{url_for('index')}}"><i
+                        class="bi bi-capslock"></i>Вернуться
+                    <div class="always-hover-style" style="margin-top: 10px"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
