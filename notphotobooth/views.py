@@ -23,24 +23,3 @@ def portfolio():
     title = 'Портфолио'
 
     return render_template('pages/portfolio.html', title=title)
-
-
-@app.route('/update', methods=['POST', 'GET'])
-def update():
-    if request.method == 'POST':
-<<<<<<< HEAD
-        try:
-            repo = git.Repo('home/clowixdev/notphotobooth')
-            origin = repo.remotes.origin
-            origin.pull()
-            return 'Updated PythonAnywhere succesfully', 200
-        except Exception as exc:
-            print(exc)
-=======
-        repo = git.Repo('home/clowixdev/notphotobooth')
-        origin = repo.remotes.origin
-        origin.pull()
-        return 'Updated PythonAnywhere succesfully', 200
->>>>>>> 3d8465dfec22cdb19af0cff9a58b7cd08eff4d5d
-    else:
-        return 'Something went wrong', 400
