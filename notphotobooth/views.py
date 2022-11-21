@@ -28,9 +28,12 @@ def portfolio():
 @app.route('/update', methods=['POST', 'GET'])
 def update():
     if request.method == 'POST':
-        repo = git.Repo('https://github.com/clowixdev/nephotobooth')
-        origin = repo.remotes.origin
-        origin.pull()
-        return 'Updated PythonAnywhere succesfully', 200
+        try:
+            repo = git.Repo('home/clowixdev/notphotobooth')
+            origin = repo.remotes.origin
+            origin.pull()
+            return 'Updated PythonAnywhere succesfully', 200
+        except Exception as exc:
+            print(exc)
     else:
         return 'Something went wrong', 400
