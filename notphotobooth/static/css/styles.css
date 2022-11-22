@@ -73,7 +73,7 @@
     height: auto;
     border-color: #ffdd8e;
     border-radius: 2%;
-    border-width: 3px;
+    border-width: 5px;
     border-style: solid;
 }
 
@@ -171,7 +171,7 @@ a.clw-portfolio-link {
     height: 80%;
     border-color: #ffdd8e;
     border-radius: 2%;
-    border-width: 3px;
+    border-width: 5px;
     border-style: solid;
 }
 
@@ -213,6 +213,55 @@ a.clw-portfolio-link {
 
 .clw-pfo-back-text a:hover{
     color: rgb(255, 255, 255);
+}
+
+.clw-price-bg {
+    height: 100vh;
+    background-image: url(../img/13darken.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.clw-price-carousel {
+    height: 80vh;
+}
+
+.clw-price-form {
+    height: 10vh;
+}
+
+.clw-price-header {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 35px;
+    letter-spacing: .20em;
+}
+
+.clw-price-subheader {
+    padding-right: 50px;
+    padding-left: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: .10em;
+}
+
+.clw-price-img {
+    max-width: 76%;
+    height: auto;
+    border-color: #ffffff;
+    border-radius: 1%;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.clw-price-money {
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.modal-wrapper {
+    width: 80%;
 }
 
 /* ! HOVER ANMIMATION */
