@@ -71,10 +71,11 @@
 .clw-portfolio-img {
     width: auto;
     height: auto;
-    border-color: #ffdd8e;
-    border-radius: 2%;
-    border-width: 5px;
-    border-style: solid;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    -moz-border-image: -moz-linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    -webkit-border-image: -webkit-linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    border-image-slice: 1;
 }
 
 .clw-portfolio-header {
@@ -169,10 +170,11 @@ a.clw-portfolio-link {
 .clw-faq-img {
     width: auto;
     height: 80%;
-    border-color: #ffdd8e;
-    border-radius: 2%;
-    border-width: 5px;
-    border-style: solid;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    -moz-border-image: -moz-linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    -webkit-border-image: -webkit-linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    border-image-slice: 1;
 }
 
 .clw-pfo-bg {
@@ -182,9 +184,11 @@ a.clw-portfolio-link {
 .clw-pfo-img {
     height: auto;
     margin: 10px;
-    border-style: solid;
-    border-color: rgb(255, 244, 221);
-    border-width: 10px;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    -moz-border-image: -moz-linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    -webkit-border-image: -webkit-linear-gradient(to bottom right, #f8f8f8, #ffe6ad 100%);
+    border-image-slice: 1;
 }
 
 .clw-pfo-img-vert {
@@ -211,7 +215,7 @@ a.clw-portfolio-link {
     letter-spacing: .20em;
 }
 
-.clw-pfo-back-text a:hover{
+.clw-pfo-back-text a:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -249,10 +253,12 @@ a.clw-portfolio-link {
 .clw-price-img {
     max-width: 76%;
     height: auto;
-    border-color: #ffffff;
     border-radius: 1%;
-    border-width: 5px;
-    border-style: solid;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #f8f8f8, #fbdf9e 100%);
+    -moz-border-image: -moz-linear-gradient(to bottom right, #f8f8f8, #fbdf9e 100%);
+    -webkit-border-image: -webkit-linear-gradient(to bottom right, #f8f8f8, #fbdf9e 100%);
+    border-image-slice: 1;
 }
 
 .clw-price-money {
@@ -276,55 +282,56 @@ a.clw-portfolio-link {
     background: linear-gradient(to right, #f8f8f8, #ffdd8e 100%);
 }
 
-li {
-    position: relative;
-}
 
-.hover-style {
-    color: #fff;
-    letter-spacing: .20em;
-    display: inline-block;
-    position: relative;
-}
+    li {
+        position: relative;
+    }
 
-.hover-style:hover::after {
-    width: 100%;
-    right: 0;
-}
+    .hover-style {
+        color: #fff;
+        letter-spacing: .20em;
+        display: inline-block;
+        position: relative;
+    }
 
-.hover-style::after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    right: 0;
-    position: absolute;
-    background: linear-gradient(to right, #f8f8f8, #ffdd8e 100%);
-    transition: width .5s ease 0s, right .5s ease 0s;
-    width: 0;
-}
+    .hover-style:hover::after {
+        width: 100%;
+        right: 0;
+    }
 
-/* ** FOOTER */
+    .hover-style::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        right: 0;
+        position: absolute;
+        background: linear-gradient(to right, #f8f8f8, #ffdd8e 100%);
+        transition: width .5s ease 0s, right .5s ease 0s;
+        width: 0;
+    }
 
-.clw-footer-width {
-    width: 100%;
-}
+    /* ** FOOTER */
 
-.paragraph-fix {
-    text-align: center;
-    max-width: 100%;
-}
+    .clw-footer-width {
+        width: 100%;
+    }
 
-.clw-footer-bg {
-    background-color: rgb(250, 233, 212);
-}
+    .paragraph-fix {
+        text-align: center;
+        max-width: 100%;
+    }
 
-.footer {
-    padding: 50px;
-}
+    .clw-footer-bg {
+        background-color: rgb(250, 233, 212);
+    }
 
-.copy {
-    padding: 20px 0 20px 0;
-    margin: 0;
-}
+    .footer {
+        padding: 50px;
+    }
+
+    .copy {
+        padding: 20px 0 20px 0;
+        margin: 0;
+    }
